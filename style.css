@@ -38,11 +38,17 @@ li {
     width: 100%;
     height: 200px;
     background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .part_2 {
     width: 100%;
     height: 200px;
     background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .part_3 {
     display: flex;
@@ -53,43 +59,70 @@ li {
   .part_3_left {
     background-color: lightgreen;
     width: 100%;
-  }
-  .part_3_center {
-    background-color: lightgray;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .part_3_right {
     background-color: lightsteelblue;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    height: 100%;
+    width: auto;
   }
 }
 
 @media screen and (max-width: 400px) {
-  ul {
+  .wrapper {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /*
-        横方向の並び方
-        justify-content: flex-start;
-        justify-content: flex-end;
-        justify-content: center;
-        justify-content: space-between;
-        justify-content: space-around;
-    */
-    justify-content: flex-start;
-    /*
-        縦方向の並び方
-        align-content: stretch;
-        align-content: flex-start;
-        align-content: flex-end;
-        align-content: center;
-        align-content: space-between;
-        align-content: space-around;
-    */
-    align-content: space-between;
+    justify-content: space-between;
   }
-  li {
-    background-color: red;
+
+  .part_1 {
+    width: 100%;
+    height: 200px;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .part_2 {
+    width: 100%;
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .part_3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+  }
+  .part_3_left {
+    background-color: lightgreen;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .part_3_right {
+    background-color: lightsteelblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    height: 100%;
+    width: auto;
   }
 }
 
